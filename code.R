@@ -1,4 +1,4 @@
-tibble::tribble(
+df <- tibble::tribble(
         ~x,~y,
         1,10,
         2,20,
@@ -6,3 +6,4 @@ tibble::tribble(
         4,40,
         5,50
 )
+
