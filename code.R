@@ -1,3 +1,5 @@
+library(tidyverse)
+
 df <- tibble::tribble(
         ~x,~y,
         1,10,
@@ -7,3 +9,6 @@ df <- tibble::tribble(
         5,50
 )
 
+ggplot2::ggplot(df, aes(x,y)) + 
+        geom_point() +
+        geom_smooth(method="lm")
