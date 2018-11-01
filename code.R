@@ -11,4 +11,6 @@ df <- tibble::tribble(
 
 ggplot2::ggplot(df, aes(x,y)) + 
         geom_point() +
-        geom_smooth(method="lm")
+        geom_smooth(method="lm") + 
+        labs(title="my test data") +
+        theme(plot.title = element_text(hjust = 0.45))
